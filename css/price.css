@@ -1739,3 +1739,182 @@ footer {
         font-size: 1.5rem;
     }
 }
+
+/* Pricing Section Styles */
+.pricing-section {
+    padding: 5rem 0;
+}
+
+.pricing-card {
+    transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+.pricing-card .card {
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.pricing-card:hover .card {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.pricing-card .card-title {
+    color: #333;
+    font-weight: 500;
+}
+
+.pricing-card .price {
+    color: #333;
+}
+
+.pricing-card .price .h2 {
+    font-weight: 600;
+}
+
+.pricing-card ul li {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.pricing-card .btn {
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.pricing-card .btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #333;
+}
+
+.pricing-card .btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #e0a800;
+    transform: translateY(-2px);
+}
+
+.pricing-card .btn-outline-warning {
+    color: #ffc107;
+    border-color: #ffc107;
+}
+
+.pricing-card .btn-outline-warning:hover {
+    background-color: #ffc107;
+    color: #333;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 991.98px) {
+    .pricing-section {
+        padding: 4rem 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .pricing-section {
+        padding: 3rem 0;
+    }
+    
+    .pricing-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Description Section Styles */
+.description-section {
+    padding: 5rem 0;
+}
+
+.description-image {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.description-image:hover {
+    transform: scale(1.02);
+}
+
+.description-image img {
+    transition: transform 0.6s ease;
+}
+
+.description-image:hover img {
+    transform: scale(1.05);
+}
+
+.description-text {
+    padding: 2rem;
+}
+
+.description-text h2 {
+    font-family: "Cormorant Garamond", serif;
+    color: #333;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.description-text h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 1px;
+    background-color: #f7bc51;
+}
+
+.description-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.description-text ul li {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.description-text ul li i {
+    color: #f7bc51;
+}
+
+@media (max-width: 991.98px) {
+    .description-section {
+        padding: 4rem 0;
+    }
+    
+    .description-text {
+        padding: 1rem;
+    }
+    
+    .description-text h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .description-section {
+        padding: 3rem 0;
+    }
+    
+    .description-text h2 {
+        font-size: 2rem;
+    }
+    
+    .description-text p {
+        font-size: 1rem;
+    }
+    
+    .description-text ul li {
+        font-size: 1rem;
+    }
+}
