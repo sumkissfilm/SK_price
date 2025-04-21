@@ -1918,3 +1918,28 @@ footer {
         font-size: 1rem;
     }
 }
+
+/* Price Display Styles */
+.original-price {
+    position: relative;
+    display: inline-block;
+}
+
+.original-price::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #dc3545;
+    transform: translateY(-50%);
+}
+
+.discounted-price {
+    color: #f7bc51;
+}
+
+.discounted-price .h2 {
+    font-weight: 600;
+}
